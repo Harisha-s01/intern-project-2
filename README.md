@@ -56,11 +56,9 @@ The extracted data is inserted into a MySQL database table for storage and later
 
 
 ### Example Database Table
-
-- CREATE DATABASE resumes_db;
-- USE resumes_db;
-
-- CREATE TABLE resumetest (
+ CREATE DATABASE resumes_db;
+ USE resumes_db;
+ CREATE TABLE resumetest (
   id INT AUTO_INCREMENT PRIMARY KEY,
   phonenumber VARCHAR(20),
   email VARCHAR(255),
@@ -74,17 +72,15 @@ The extracted data is inserted into a MySQL database table for storage and later
 pip install PyPDF2 mysql-connector-python
 
 **Configuration**
-Before running the script, configure these settings in your code:
-
-- EMAIL = "your-email@gmail.com"
-- PASSWORD = "your-app-password"  # Use an app password if 2FA is enabled
-- IMAP_SERVER = "imap.gmail.com"
-
-- DB_HOST = "localhost"
-- DB_USER = "your-db-username"
-- DB_PASSWORD = "your-db-password"
-- DB_NAME = "resumes_db"
+- Before running the script, configure these settings in your code:
+EMAIL = "your-email@gmail.com"
+PASSWORD = "your-app-password"  # Use an app password if 2FA is enabled
+IMAP_SERVER = "imap.gmail.com"
+DB_HOST = "localhost"
+DB_USER = "your-db-username"
+DB_PASSWORD = "your-db-password"
+DB_NAME = "resumes_db"
 
 **Running the Project**
 - Run the main script:
-- python main.py
+  python main.py
