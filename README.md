@@ -72,7 +72,7 @@ The extracted data is inserted into a MySQL database table for storage and later
 pip install PyPDF2 mysql-connector-python
 
 **Configuration**
-- Before running the script, configure these settings in your code:
+Before running the script, configure these settings in your code:
  - EMAIL = "your-email@gmail.com"
  - PASSWORD = "your-app-password"  # Use an app password if 2FA is enabled
  - IMAP_SERVER = "imap.gmail.com"
